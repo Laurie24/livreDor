@@ -1,0 +1,36 @@
+<h1>Ajouter une annonce</h1>
+<div class="container">
+  <form #annonceForm="ngForm" (ngSubmit)="addAnnonce()">
+    <label for="nom">Photo</label>
+    <input type="text" class="form-control" id="photo" name="photo" required [(ngModel)]="annonce.photo" #photo="ngModel">
+    <div [hidden]="photo.valid"
+         class="alert alert-danger">
+      Photo invalide
+    </div>
+
+    <label for="nom">Titre</label>
+    <input type="text" class="form-control" id="nom" name="nom" required [(ngModel)]="annonce.titre" #titre="ngModel">
+    <div [hidden]="titre.valid"
+         class="alert alert-danger">
+      Nom invalide
+    </div>
+
+
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" name="description" [(ngModel)]="annonce.description" #description="ngModel">
+    <div [hidden]="description.valid"
+         class="alert alert-danger">
+      Description invalide
+    </div>
+
+    <label for="date">Date</label>
+    <input type="date" class="form-control" id="date" name="date" [(ngModel)]="annonce.dateAjout" #date="ngModel">
+    <div [hidden]="date.valid"
+         class="alert alert-danger">
+      Date invalide
+    </div>
+    <br>
+    <input  [disabled]="!annonceForm.valid" type="submit" class="btn">
+  </form>
+</div>
+

@@ -1,0 +1,26 @@
+<div class="box">
+  <h1>Les Messages</h1>
+  <div *ngIf="!isLoading" class="liste row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+    <div *ngFor="let annonce of this.annonce" class="card shadow" style="width: 25rem;">
+      <div class="card-body">
+        <h4>{{annonce.titre}}</h4>
+        <img src='../../../assets/images/{{annonce.photo}}' class="card-img-top" alt="">
+        <p class="card-text"><span class="font-weight-bold"> Description :</span> {{annonce.description}} </p>
+        <p class="card-text"><span class="font-weight-bold"> Date :</span> {{annonce.dateAjout}} </p>
+        <hr>
+        <a class="btn" [routerLink]="['/annonce', annonce.id]">Détails</a>
+        <br>
+        <a class="btn" style="color: #5c5c5c; cursor: pointer" (click)="deleteAnnonce(annonce)">Supprimer</a>
+        <br>
+        <a class="btn" [routerLink]="['/annonce/update', annonce.id]">Modifier</a>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isLoading">
+    <div class="fa-3x">
+      <div>Chargement en cours</div>
+    </div>
+  </div>
+</div>
+
+

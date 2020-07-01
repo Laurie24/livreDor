@@ -1,0 +1,31 @@
+img{
+  width: 250px;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn{
+  background-color: #ffe4cf;
+  border: #ffe4cf 3px solid;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.btn:hover{
+  background-color: black;
+  border: black 3px solid;
+  color: #ffe4cf;
+  margin-bottom: 1rem;
+}
+
+.add{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}

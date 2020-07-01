@@ -1,0 +1,32 @@
+.card{
+  background-color: white;
+  color: black;
+  margin-bottom: 5rem;
+}
+h1{
+  color: black;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.box{
+  padding-top: 3rem;
+  background-color: rgba(255, 228, 207, 0.5);
+}
+
+.btn{
+  background-color: #ffe4cf;
+  border: #ffe4cf 1px solid;
+  margin: .3rem;
+  color: black;
+}
+
+.btn:hover{
+  background-color: black;
+  border: black 1px solid;
+  margin: 0.3rem;
+  color: #ffe4cf;
+}
+a{
+  color: black;
+}

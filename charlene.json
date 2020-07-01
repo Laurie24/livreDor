@@ -1,0 +1,25 @@
+{
+  "annonce": [
+    {
+      "photo": "charlene.jpg",
+      "titre": "The best chef de projet !!",
+      "dateAjout": "2020-07-01",
+      "description": "Charlène qui sourit",
+      "id": 2
+    },
+    {
+      "photo": "charlene.jpg",
+      "titre": "Merci pour ta bienveillance et ta disponibilité tout au long de notre formation",
+      "description": "Charlène qui est heureuse d'avoir reçu des fleurs !",
+      "dateAjout": "2020-06-30",
+      "id": 3
+    },
+    {
+      "photo": "charlene.jpg",
+      "titre": "On te souhaite bonne continuation dans ta vie professionnelle",
+      "description": "Charlène qui est contente d'aller manger chez Bocluse !",
+      "dateAjout": "2020-06-29",
+      "id": 4
+    }
+  ]
+}

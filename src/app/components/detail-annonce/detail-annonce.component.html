@@ -1,0 +1,23 @@
+<div class="box">
+  <ng-container *ngIf="!isLoading">
+    <div class="row justify-content-center">
+      <div class="card shadow " style="width: 40rem;">
+        <div class="card-body">
+          <h1>{{ annonce.titre }}</h1>
+          <img src="assets/images/{{annonce.photo}}" width="100%" >
+          <p>Description : {{annonce.description}}</p>
+          <p>Date : {{annonce.dateAjout}}</p>
+          <a class="btn" style="color: #5c5c5c; cursor: pointer" (click)="deleteAnnonce(annonce)">Supprimer</a>
+          <br>
+          <a class="btn" [routerLink]="['/annonce/update', annonce.id]">Modifier</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="isLoading">
+    <div>Chargement en cours...</div>
+  </ng-container>
+</div>
+
+
